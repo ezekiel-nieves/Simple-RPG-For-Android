@@ -1,11 +1,11 @@
 <resources>
     <string name="app_name">""</string>
     <string name="bash">BASH</string>
-    <string name="psyString">PSI</string>
+    <string name="psyString">PSY</string>
     <string name="itemString">ITEM</string>
     <string name="runString">RUN</string>
-    <string name="restartString">RESTART?</string>
-    <string name="nextString">Next Battle!</string>
+    <string name="restartString">Retry?</string>
+    <string name="nextString">Next!</string>
     <string name="chadJuice">""</string>
     <string name="chadJuiceRevealed">Chad Juice</string>
     <string name="enemyHP">HP: 50/50</string>
@@ -17,7 +17,8 @@
     <string name="defText">""</string>
     <string name="hpText">""</string>
     <string name="magText">""</string>
-
+    <string name="enemyInfo">The enemy took 0 damage!</string>
+    <string name="playerInfo">The player took 0 damage!</string>
 
 
 </resources>

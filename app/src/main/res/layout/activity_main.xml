@@ -12,16 +12,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="231dp"
-        android:layout_marginEnd="250dp"
         android:layout_marginBottom="82dp"
         android:fontFamily="@font/press_start_2p"
         android:scaleX="1"
         android:scaleY="1"
         android:text="@string/enemyHP"
         android:textColor="@android:color/background_light"
-        android:textSize="18sp"
+        android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/divider2"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/divider3" />
 
@@ -106,7 +104,7 @@
         android:fontFamily="@font/press_start_2p"
         android:text="@string/chadJuice"
         android:textColor="@android:color/background_light"
-        android:textSize="18sp"
+        android:textSize="14sp"
         android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/divider2"
         app:layout_constraintEnd_toEndOf="parent"
@@ -122,14 +120,16 @@
         android:layout_marginEnd="156dp"
         android:layout_marginBottom="212dp"
         android:clickable="true"
-        android:scaleType="fitCenter"
+        android:scaleType="centerInside"
+        android:scaleX="3"
+        android:scaleY="3"
         android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/divider2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/divider3"
-        app:srcCompat="@drawable/gohan" />
+        app:srcCompat="@drawable/gohan1" />
 
     <TextView
         android:id="@+id/FlavorText"
@@ -151,24 +151,23 @@
         android:id="@+id/devButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
         android:text="devCheat"
-        app:layout_constraintBottom_toTopOf="@+id/playerHP"
-        app:layout_constraintTop_toBottomOf="@+id/divider3"
-        tools:layout_editor_absoluteX="26dp" />
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider3" />
 
     <TextView
         android:id="@+id/attackText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="16dp"
         android:layout_marginBottom="24dp"
         android:fontFamily="@font/press_start_2p"
         android:text="@string/atkText"
         android:textColor="@color/colorAccent"
         app:layout_constraintBottom_toTopOf="@+id/defenseText"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/enemySprite"
         app:layout_constraintTop_toBottomOf="@+id/healthText" />
 
@@ -176,15 +175,13 @@
         android:id="@+id/magicText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="16dp"
         android:layout_marginBottom="230dp"
         android:fontFamily="@font/press_start_2p"
         android:text="@string/magText"
         android:textColor="@color/colorAccent"
         app:layout_constraintBottom_toTopOf="@+id/divider2"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/enemySprite"
         app:layout_constraintTop_toBottomOf="@+id/defenseText" />
 
@@ -192,14 +189,13 @@
         android:id="@+id/healthText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="16dp"
         android:layout_marginBottom="24dp"
         android:fontFamily="@font/press_start_2p"
         android:text="@string/hpText"
         android:textColor="@color/colorAccent"
         app:layout_constraintBottom_toTopOf="@+id/attackText"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/enemySprite"
         app:layout_constraintTop_toBottomOf="@+id/divider3" />
 
@@ -207,17 +203,66 @@
         android:id="@+id/defenseText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="16dp"
         android:layout_marginBottom="24dp"
         android:fontFamily="@font/press_start_2p"
         android:text="@string/defText"
         android:textColor="@color/colorAccent"
         app:layout_constraintBottom_toTopOf="@+id/magicText"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/enemySprite"
         app:layout_constraintTop_toBottomOf="@+id/attackText" />
+
+    <TextView
+        android:id="@+id/enemyInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginBottom="60dp"
+        android:fontFamily="@font/press_start_2p"
+        android:text="@string/enemyInfo"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/enemySprite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/playerInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="128dp"
+        android:fontFamily="@font/press_start_2p"
+        android:text="@string/playerInfo"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enemySprite" />
+
+    <Button
+        android:id="@+id/akechiButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="324dp"
+        android:layout_marginTop="268dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="415dp"
+        android:background="@color/colorPrimary"
+        android:fontFamily="@font/press_start_2p"
+        android:scaleX="1"
+        android:text="?"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
