@@ -1,0 +1,1 @@
+This is an RPG game that can be played on an android device to showcase the fun functionalities of simple game development. While this project has some poor practices, I believe it is a fascinating showcase of my creativity at 16 years old.
